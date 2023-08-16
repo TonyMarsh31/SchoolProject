@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>注册页面</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- smartWizard -->
+    <link href="https://unpkg.com/smartwizard@5/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://unpkg.com/smartwizard@5/dist/js/jquery.smartWizard.min.js" type="text/javascript"></script>
+
+    <style>
+
+        @media (min-width: 768px) {
+        }
+
+        .form-control-dark:focus {
+            border-color: #fff;
+            box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        .site-header a {
+            color: #8e8e8e;
+            transition: color .15s ease-in-out;
+        }
+
+        .site-header a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .flex-equal > * {
+            flex: 1;
+        }
+
+        @media (min-width: 768px) {
+            .flex-md-equal > * {
+                flex: 1;
+            }
+        }
+
+        @media (min-width: 768px) {
+        }
+
+        .st0 {
+            fill: #1CA2BB;
+        }
+
+        .st1 {
+            fill: #EAC100;
+        }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        /*
+         * Custom translucent site header
+         */
+
+        .site-header a {
+            color: #8e8e8e;
+            transition: color .15s ease-in-out;
+        }
+        .site-header a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /*
+         * Extra utilities
+         */
+
+        .flex-equal > * {
+            flex: 1;
+        }
+        @media (min-width: 768px) {
+            .flex-md-equal > * {
+                flex: 1;
+            }
+        }
+
+        .col {
+            background: #d4e3ea;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .breadcrumb-item + .breadcrumb-item::before {
+            content: ">";
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg width="128px" height="128px" viewBox="0 0 128 128" style=":new 0 0 128 128;"
+                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <g id="_x31_2_3D_Printing"/>
+                    <g id="_x31_1_VR_Gear"/>
+                    <g id="_x31_0_Virtual_reality"/>
+                    <g id="_x39__Augmented_reality"/>
+                    <g id="_x38__Teleport"/>
+                    <g id="_x37__Glassess"/>
+                    <g id="_x36__Folding_phone"/>
+                    <g id="_x35__Drone"/>
+                    <g id="_x34__Retina_scan"/>
+                    <g id="_x33__Smartwatch"/>
+                    <g id="_x32__Bionic_Arm"><g><polyline class="st0" points="84,92 84,104 36,104 36,92   "/><polyline
+                            class="st1" points="76,104 76,116 44,116 44,104   "/><rect class="st1" height="20"
+                                                                                       width="12"
+                                                                                       x="32" y="28"/><rect class="st1"
+                                                                                                            height="28"
+                                                                                                            width="12"
+                                                                                                            x="44"
+                                                                                                            y="20"/><rect
+                            class="st1" height="28" width="12" x="68" y="20"/><rect class="st1" height="36" width="12"
+                                                                                    x="56" y="12"/><rect class="st1"
+                                                                                                         height="16"
+                                                                                                         width="12"
+                                                                                                         x="92"
+                                                                                                         y="36"/><polygon
+                            class="st0" points="88,92 32,92 32,64 80,64 88,72   "/><g><path d="M108,32H88v24h6v6.1l-5.7,4.6L81.7,60H78v-8h6V16H72V8H52v8H40v8H28v28h6v8h-6v36h4v12h8v12h40v-12h8V96h4V73.9l10-8V56     h6V32z M84,73.7V88H36V68h42.3L84,73.7z M54,52h4v8h-4V52z M66,60v-8h4v8H66z M76,24v20h-4V24H76z M64,16v28h-4V16H64z M52,24v20     h-4V24H52z M36,32h4v12h-4V32z M42,52h4v8h-4V52z M72,112H48v-4h24V112z M80,100H40v-4h40V100z M96,40h4v8h-4V40z"/>
+                        <rect height="8" width="8" x="40" y="72"/></g></g></g>
+                    <g id="_x31__Chip"/></svg>
+            </a>
+            <?xml version="1.0" ?>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a class="nav-link px-2 text-secondary" href="#">导航栏测试占位符</a></li>
+                <li><a class="nav-link px-2 text-white" href="index.html">返回主页</a></li>
+            </ul>
+
+        </div>
+    </div>
+</header>
+
+
+<div class="container-fluid">
+    <div>smartWizard</div>
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div id="smartwizard">
+        <ul class="nav">
+            <li>
+                <a class="nav-link" href="#step-1">
+                    Step 1
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="#step-2">
+                    Step 2
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="#step-3">
+                    Step 3
+                </a>
+            </li>
+            <li>
+                <a class="nav-link" href="#step-4">
+                    Step 4
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="step-1" class="tab-pane" role="tabpanel">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group row">
+                        <label for="firstname" class="col-sm-2 control-label">名字</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="firstname"
+                                   placeholder="请输入名字">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div id="step-2" class="tab-pane" role="tabpanel">
+                <form class="form-inline" role="form">
+                    <div class="form-group  ">
+                        <label class="sr-only" for="name">名称</label>
+                        <input type="text" class="form-control" id="name" placeholder="请输入名称">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputfile">文件输入</label>
+                        <input type="file" id="inputfile">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">请打勾
+                        </label>
+                    </div>
+
+                </form>
+
+            </div>
+            <div id="step-3" class="tab-pane" role="tabpanel">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                               placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Example select</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Example multiple select</label>
+                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div id="step-4" class="tab-pane" role="tabpanel">
+                <form class="form-inline" role="form">
+                    <div class="form-group  ">
+                        <label class="sr-only" for="name">名称</label>
+                        <input type="text" class="form-control" id="name" placeholder="请输入名称">
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">请打勾
+                        </label>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">&copy; 191340219 孙涛 </small>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        // SmartWizard initialize
+        $('#smartwizard').smartWizard();
+
+    });
+
+
+    $('#smartwizard').smartWizard({
+        selected: 0, // Initial selected step, 0 = first step
+        theme: 'progress', // arrows dots progress theme for the wizard, related css need to include for other than default theme
+        justified: true, // Nav menu justification. true/false
+        darkMode: false, // Enable/disable Dark Mode if the theme supports. true/false
+        autoAdjustHeight: true, // Automatically adjust content height
+        cycleSteps: false, // Allows to cycle the navigation of steps
+        backButtonSupport: false, // Enable the back button support
+        enableURLhash: true, // Enable selection of the step based on url hash
+        transition: {
+            animation: 'fade', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
+            speed: '400', // Transion animation speed
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
+        },
+        toolbarSettings: {
+            toolbarPosition: 'bottom', // none, top, bottom, both
+            toolbarButtonPosition: 'right', // left, right, center
+            showNextButton: true, // show/hide a Next button
+            showPreviousButton: true, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+        },
+        anchorSettings: {
+            anchorClickable: true, // Enable/Disable anchor navigation
+            enableAllAnchors: false, // Activates all anchors clickable all times
+            markDoneStep: true, // Add done state on navigation
+            markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
+            removeDoneStepOnNavigateBack: false, // While navigate back done step after active step will be cleared
+            enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+        },
+        keyboardSettings: {
+            keyNavigation: true, // Enable/Disable keyboard navigation(left and right keys are used if enabled)
+            keyLeft: [37], // Left key code
+            keyRight: [39] // Right key code
+        },
+        lang: { // Language variables for button
+            next: 'Next',
+            previous: 'Previous'
+        },
+        disabledSteps: [], // Array Steps disabled
+        errorSteps: [], // Highlight step with errors
+        hiddenSteps: [] // Hidden steps
+    });
+</script>
+</html>
+

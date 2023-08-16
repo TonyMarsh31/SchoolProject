@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用Bootstrap数据表显示附件数据数据</title>
+    <meta charset="UTF-8">
+    <title>bootstrap表格</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
+    <!-- Latest compiled and minified Locales -->
+    <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+    <style>
+        .mytable th {
+            color: #609353;
+            background-color: #aa6c6c;
+            border-color: #6c3a3a;
+            margin-bottom: 1rem;
+            vertical-align: top;
+            border-top: 1px solid #2a4969;
+        }
+    </style>
+
+
+</head>
+<body>
+<table class="table table-bordered table-hover mytable" id="tb">
+    <thead>
+    <tr>
+        <th>排行</th>
+        <th>学校名称</th>
+        <th>平均分</th>
+        <th>最高分</th>
+        <th>最低分</th>
+        <th>录取人数</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>清华大学</td>
+        <td>689</td>
+        <td>713</td>
+        <td>623</td>
+        <td>99</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>清华大学</td>
+        <td>689</td>
+        <td>713</td>
+        <td>623</td>
+        <td>99</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>清华大学</td>
+        <td>689</td>
+        <td>713</td>
+        <td>623</td>
+        <td>99</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>清华大学</td>
+        <td>689</td>
+        <td>713</td>
+        <td>623</td>
+        <td>99</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>清华大学</td>
+        <td>689</td>
+        <td>713</td>
+        <td>623</td>
+        <td>99</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>清华大学</td>
+        <td>689</td>
+        <td>713</td>
+        <td>623</td>
+        <td>99</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>清华大学</td>
+        <td>689</td>
+        <td>713</td>
+        <td>623</td>
+        <td>99</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>清华大学</td>
+        <td>689</td>
+        <td>713</td>
+        <td>623</td>
+        <td>99</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>清华大学</td>
+        <td>689</td>
+        <td>713</td>
+        <td>623</td>
+        <td>99</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>清华大学</td>
+        <td>689</td>
+        <td>713</td>
+        <td>623</td>
+        <td>99</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>清华大学</td>
+        <td>689</td>
+        <td>713</td>
+        <td>623</td>
+        <td>99</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+
+    $("#tb").bootstrapTable({
+        pagination: true,   //是否显示分页条
+        pageSize: 3,   //一页显示的行数
+        paginationLoop: false,   //是否开启分页条无限循环，最后一页时点击下一页是否转到第一页
+        pageList: [5, 10, 20]   //选择每页显示多少行，数据过少时可能会没有效果
+    });
+</script>
+
+
+</body>
+</html>

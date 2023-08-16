@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>index19</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="191340219 孙涛 计算机科学与技术2班">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <style>
+
+        @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+        @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+        @media (min-width: 768px) {
+        }
+
+        .form-control-dark:focus {
+            border-color: #fff;
+            box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+        }
+
+        .text-small {
+            font-size: 85%;
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        .site-header a {
+            color: #8e8e8e;
+            transition: color .15s ease-in-out;
+        }
+
+        .site-header a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .flex-equal > * {
+            flex: 1;
+        }
+
+        @media (min-width: 768px) {
+            .flex-md-equal > * {
+                flex: 1;
+            }
+        }
+
+        @media (min-width: 768px) {
+        }
+
+        .st0 {
+            fill: #1CA2BB;
+        }
+
+        .st1 {
+            fill: #EAC100;
+        }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        /*
+         * Custom translucent site header
+         */
+
+        .site-header a {
+            color: #8e8e8e;
+            transition: color .15s ease-in-out;
+        }
+        .site-header a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /*
+         * Extra utilities
+         */
+
+        .flex-equal > * {
+            flex: 1;
+        }
+        @media (min-width: 768px) {
+            .flex-md-equal > * {
+                flex: 1;
+            }
+        }
+
+
+        /*侧边栏*/
+        .fa-2x {
+            font-size: 2em;
+        }
+        .fa {
+            position: relative;
+            display: table-cell;
+            width: 60px;
+            height: 36px;
+            text-align: center;
+            vertical-align: middle;
+            font-size:20px;
+        }
+
+        .main-menu:hover,nav.main-menu.expanded {
+            width:250px;
+            overflow:visible;
+        }
+
+        .main-menu {
+            background:#212121;
+            border-right:1px solid #e5e5e5;
+            position:absolute;
+            top:0;
+            bottom:0;
+            height:100%;
+            left:0;
+            width:60px;
+            overflow:hidden;
+            -webkit-transition:width .05s linear;
+            transition:width .05s linear;
+            -webkit-transform:translateZ(0) scale(1,1);
+            z-index:1000;
+        }
+
+        .main-menu>ul {
+            margin:7px 0;
+        }
+
+        .main-menu li {
+            position:relative;
+            display:block;
+            width:250px;
+        }
+
+        .main-menu li>a {
+            position:relative;
+            display:table;
+            border-collapse:collapse;
+            border-spacing:0;
+            color:#999;
+            font-family: arial;
+            font-size: 14px;
+            text-decoration:none;
+            -webkit-transform:translateZ(0) scale(1,1);
+            -webkit-transition:all .1s linear;
+            transition:all .1s linear;
+
+        }
+
+        .main-menu .nav-icon {
+            position:relative;
+            display:table-cell;
+            width:60px;
+            height:36px;
+            text-align:center;
+            vertical-align:middle;
+            font-size:18px;
+        }
+
+        .main-menu .nav-text {
+            position:relative;
+            display:table-cell;
+            vertical-align:middle;
+            width:190px;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .main-menu>ul.logout {
+            position:absolute;
+            left:0;
+            bottom:0;
+        }
+
+        .no-touch .scrollable.hover {
+            overflow-y:hidden;
+        }
+
+        .no-touch .scrollable.hover:hover {
+            overflow-y:auto;
+            overflow:visible;
+        }
+
+        a:hover,a:focus {
+            text-decoration:none;
+        }
+
+        nav {
+            -webkit-user-select:none;
+            -moz-user-select:none;
+            -ms-user-select:none;
+            -o-user-select:none;
+            user-select:none;
+        }
+
+        nav ul,nav li {
+            outline:0;
+            margin:0;
+            padding:0;
+        }
+        .main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+            color:#fff;
+            background-color:#5fa2db;
+        }
+        .area {
+            float: left;
+            background: #e2e2e2;
+            width: 100%;
+            height: 100%;
+        }
+        @font-face {
+            font-family: 'Titillium Web';
+            font-style: normal;
+            font-weight: 300;
+            src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<!--侧边栏-->
+<div class="area"></div>
+<nav class="main-menu">
+    <ul>
+        <li>
+            <a href="http://justinfarrow.com">
+                <i class="fa fa-home fa-2x"></i>
+                <span class="nav-text">
+                            Dashboard
+                        </span>
+            </a>
+
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-laptop fa-2x"></i>
+                <span class="nav-text">
+                            Stars Components
+                        </span>
+            </a>
+
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-list fa-2x"></i>
+                <span class="nav-text">
+                            Forms
+                        </span>
+            </a>
+
+        </li>
+        <li class="has-subnav">
+            <a href="#">
+                <i class="fa fa-folder-open fa-2x"></i>
+                <span class="nav-text">
+                            Pages
+                        </span>
+            </a>
+
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-bar-chart-o fa-2x"></i>
+                <span class="nav-text">
+                            Graphs and Statistics
+                        </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-font fa-2x"></i>
+                <span class="nav-text">
+                           Quotes
+                        </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-table fa-2x"></i>
+                <span class="nav-text">
+                            Tables
+                        </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-map-marker fa-2x"></i>
+                <span class="nav-text">
+                            Maps
+                        </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-info fa-2x"></i>
+                <span class="nav-text">
+                            Documentation
+                        </span>
+            </a>
+        </li>
+    </ul>
+
+    <ul class="logout">
+        <li>
+            <a href="#">
+                <i class="fa fa-power-off fa-2x"></i>
+                <span class="nav-text">
+                            Logout
+                        </span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!--侧边栏-->
+
+
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg width="128px" height="128px" viewBox="0 0 128 128" style=":new 0 0 128 128;"
+                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <g id="_x31_2_3D_Printing"/>
+                    <g id="_x31_1_VR_Gear"/>
+                    <g id="_x31_0_Virtual_reality"/>
+                    <g id="_x39__Augmented_reality"/>
+                    <g id="_x38__Teleport"/>
+                    <g id="_x37__Glassess"/>
+                    <g id="_x36__Folding_phone"/>
+                    <g id="_x35__Drone"/>
+                    <g id="_x34__Retina_scan"/>
+                    <g id="_x33__Smartwatch"/>
+                    <g id="_x32__Bionic_Arm"><g><polyline class="st0" points="84,92 84,104 36,104 36,92   "/><polyline
+                            class="st1" points="76,104 76,116 44,116 44,104   "/><rect class="st1" height="20"
+                                                                                       width="12"
+                                                                                       x="32" y="28"/><rect class="st1"
+                                                                                                            height="28"
+                                                                                                            width="12"
+                                                                                                            x="44"
+                                                                                                            y="20"/><rect
+                            class="st1" height="28" width="12" x="68" y="20"/><rect class="st1" height="36" width="12"
+                                                                                    x="56" y="12"/><rect class="st1"
+                                                                                                         height="16"
+                                                                                                         width="12"
+                                                                                                         x="92"
+                                                                                                         y="36"/><polygon
+                            class="st0" points="88,92 32,92 32,64 80,64 88,72   "/><g><path d="M108,32H88v24h6v6.1l-5.7,4.6L81.7,60H78v-8h6V16H72V8H52v8H40v8H28v28h6v8h-6v36h4v12h8v12h40v-12h8V96h4V73.9l10-8V56     h6V32z M84,73.7V88H36V68h42.3L84,73.7z M54,52h4v8h-4V52z M66,60v-8h4v8H66z M76,24v20h-4V24H76z M64,16v28h-4V16H64z M52,24v20     h-4V24H52z M36,32h4v12h-4V32z M42,52h4v8h-4V52z M72,112H48v-4h24V112z M80,100H40v-4h40V100z M96,40h4v8h-4V40z"/>
+                        <rect height="8" width="8" x="40" y="72"/></g></g></g>
+                    <g id="_x31__Chip"/></svg>
+            </a>
+            <?xml version="1.0" ?>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a class="nav-link px-2 text-secondary" href="#">导航栏测试占位符</a></li>
+                <li><a class="nav-link px-2 text-white" href="http://corndog.io/">corndog</a></li>
+                <li><a class="nav-link px-2 text-white" href="https://puginarug.com/">Pug In Rug</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="搜索..."
+                       aria-label="Search">
+            </form>
+
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">登陆</button>
+                <a type="button" class="btn btn-warning" href="signup.html">注册</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 fw-normal">头标题</h1>
+            <p class="lead fw-normal">略略略</p>
+            <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#myModal">模态框测试</button>
+            <!-- 模态框（Modal） -->
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">标题</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            略略略略略略略
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">确认</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal -->
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">小标题</h2>
+                <p class="lead">略略略略略</p>
+            </div>
+            <div class="bg-light shadow-sm mx-auto"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">小标题</h2>
+                <p class="lead">略略略略略</p>
+            </div>
+            <div class="bg-dark shadow-sm mx-auto"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">小标题</h2>
+                <p class="lead">略略略略略</p>
+            </div>
+            <div class="bg-dark shadow-sm mx-auto"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+        <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">小标题</h2>
+                <p class="lead">略略略略略</p>
+            </div>
+            <div class="bg-light shadow-sm mx-auto"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">小标题</h2>
+                <p class="lead">略略略略略</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">小标题</h2>
+                <p class="lead">略略略略略</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">小标题</h2>
+                <p class="lead">略略略略略</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">小标题</h2>
+                <p class="lead">略略略略略</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+    </div>
+</main>
+
+<footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">&copy; 191340219 孙涛 </small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>下标解释超链接</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">略略略略略</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap表格</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>名称</th>
+        <th>控件</th>
+        <th>说明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Email类型</td>
+        <td><input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"></td>
+        <td>要求用户输入Email类型数据，提交表单时会自动验证</td>
+    </tr>
+    <tr>
+        <td>Search类型</td>
+        <td><input type="search" class="form-control" id="exampleInputSearch" placeholder="Search"></td>
+        <td>搜索文本框……</td>
+    </tr>
+    <tr>
+        <td>URL类型</td>
+        <td><input type="url" class="form-control" id="exampleInputURL" placeholder="URL"></td>
+        <td>对用户输入的数据进行URL检测……</td>
+    </tr>
+    <tr>
+        <td>tel类型</td>
+        <td><input type="tel" class="form-control" id="exampleInputTel" placeholder="Tel"></td>
+        <td>只对移动端有效，会显示拨号按键，通过该按键接受用户录入的数据</td>
+    </tr>
+    <tr>
+        <td>数字类型</td>
+        <td><input type="number" class="form-control" id="exampleInputNumber" placeholder="Number"></td>
+        <td>只能接受数字，min表示接受数字的下限，mix上限，step表示步长</td>
+    </tr>
+    <tr>
+        <td>范围类型</td>
+        <td><input type="range" class="form-control" id="exampleInputRange" placeholder="Range"></td>
+        <td>提供一个滑块工具以便取得指定范围内的数值</td>
+    </tr>
+    <tr>
+        <td>颜色类型</td>
+        <td><input type="color" class="form-control" id="exampleInputColor" placeholder="Color"></td>
+        <td>弹出一个调色板</td>
+    </tr>
+    <tr>
+        <td>日期类型</td>
+        <td><input type="date" class="form-control" id="exampleInputDate" placeholder="Date"></td>
+        <td>弹出日历框，用户选择一天的时间</td>
+    </tr>
+    <tr>
+        <td>周类型</td>
+        <td><input type="week" class="form-control" id="exampleInputWeek" placeholder="Week"></td>
+        <td>弹出周历框，用户选择一周的时间</td>
+    </tr>
+    <tr>
+        <td>月类型</td>
+        <td><input type="month" class="form-control" id="exampleInputMonth" placeholder="Month"></td>
+        <td>弹出月历框，用户选择一月的时间</td>
+    </tr>
+    <tr>
+        <td>本地日期与时间类型</td>
+        <td><input type="datetime-local" class="form-control" id="exampleInputLocalDatetime" placeholder="Datetime">
+        </td>
+        <td>弹出日历框，允许用户选择年月日，通过按钮选取时间</td>
+    </tr>
+    <tr>
+        <td>Required</td>
+        <td><input type="text" class="form-control" id="exampleInputRequired" placeholder="Required" required></td>
+        <td>必填项，用户不能缺失该项数据</td>
+    </tr>
+    <tr>
+        <td>Multiple</td>
+        <td><input type="text" class="form-control" id="exampleInputMultiple" placeholder="Multiple" multiple></td>
+        <td>多行文本框，用户可以输入多行文本</td>
+    </tr>
+    <tr>
+        <td>Autofocus</td>
+        <td><input type="text" class="form-control" id="exampleInputAutofocus" placeholder="Autofocus" autofocus></td>
+        <td>自动获取焦点</td>
+    </tr>
+    <tr>
+        <td>Pattern</td>
+        <td><input type="text" class="form-control" id="exampleInputPattern" pattern="[a-zA-Z]*"
+                   placeholder="pattern=[a-zA-Z]*">
+        </td>
+        <td>提示用户输入指定的字符串,不符合则不允许提交</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="reset" class="btn btn-default">Reset</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

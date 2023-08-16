@@ -1,0 +1,330 @@
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+  <title>REMOJI</title>
+
+
+  <meta name="Description" content="REMOJI"/>
+  <meta name="robots" content="NOODP"/>
+  <meta name="revisit-after" content="1 days">
+
+
+
+  <link rel="shortcut icon" href="https://remoji.com/favicon.ico">
+
+  <link rel="image_src" href="https://remoji.com/wheel_icon.png" />
+
+  <style>
+    <!--
+    html { overflow: hidden; }
+    .paw {
+      position:absolute;
+      top:0;
+      left:0;
+      visibility:hidden;
+    }
+
+
+  </style>
+
+  <!-- PAW TRACKER START /-->
+
+  <script type="text/JavaScript">
+
+    pawCount = 640
+    curPaw = 0
+    trackDelay = 6400
+    trackSpacer = 24
+    theimage = "img/aerobics.gif"
+    theimage2 = "img/apple.gif"
+    theimage3 = "img/ax.gif"
+    theimage4 = "img/bat.gif"
+    theimage5 = "img/bbq.gif"
+    theimage6 = "img/beehive.gif"
+    theimage7 = "img/betamax.gif"
+    theimage8 = "img/blackwand.gif"
+    theimage9 = "img/book.gif"
+    theimage10 = "img/bouncywitchhat.gif"
+    theimage11 = "img/briefcase.gif"
+    theimage12 = "img/cactus.gif"
+    theimage13 = "img/cap.gif"
+    theimage14 = "img/cat.gif"
+    theimage15 = "img/cheese2.gif"
+    theimage16 = "img/chillpill.gif"
+    theimage17 = "img/coolcat.gif"
+    theimage18 = "img/daisy.gif"
+    theimage19 = "img/dinosaur.gif"
+    theimage20 = "img/dracula.gif"
+    theimage21 = "img/duck.gif"
+    theimage22 = "img/egg.gif"
+    theimage23 = "img/eyes2.gif"
+    theimage24 = "img/firecracker.gif"
+    theimage25 = "img/fish.gif"
+    theimage26 = "img/flower.gif"
+    theimage27 = "img/friedegg.gif"
+    theimage28 = "img/fuzzyblink.gif"
+    theimage29 = "img/ghostgrave.gif"
+    theimage30 = "img/gift.gif"
+    theimage31 = "img/grave.gif"
+    theimage32 = "img/greensparkles.gif"
+    theimage33 = "img/gumball.gif"
+    theimage34 = "img/hang.gif"
+    theimage35 = "img/hat.gif"
+    theimage36 = "img/heart.gif"
+    theimage37 = "img/hellokitty.gif"
+    theimage38 = "img/hotpinksparkles.gif"
+    theimage39 = "img/hummingbird.gif"
+    theimage40 = "img/hypno.gif"
+    theimage41 = "img/jellybean.gif"
+    theimage42 = "img/kite.gif"
+    theimage43 = "img/leak.gif"
+    theimage44 = "img/lightbulb1.gif"
+    theimage45 = "img/lilbubble.gif"
+    theimage46 = "img/lilbutterflies.gif"
+    theimage47 = "img/lileyes.gif"
+    theimage48 = "img/lilshoe.gif"
+    theimage49 = "img/lobster.gif"
+    theimage50 = "img/magic.gif"
+    theimage51 = "img/mardigras.gif"
+    theimage52 = "img/mummy.gif"
+    theimage53 = "img/nofinger.gif"
+    theimage54 = "img/numchucks.gif"
+    theimage55 = "img/orangeflower.gif"
+    theimage56 = "img/ostrichegg.gif"
+    theimage57 = "img/owl.gif"
+    theimage58 = "img/pan.gif"
+    theimage59 = "img/paperbaghead.gif"
+    theimage60 = "img/pentagram.gif"
+    theimage61 = "img/pie.gif"
+    theimage62 = "img/pinkheart.gif"
+    theimage63 = "img/pinksparkle.gif"
+    theimage64 = "img/pizza.gif"
+    theimage65 = "img/pop.gif"
+    theimage66 = "img/purpleblob.gif"
+    theimage67 = "img/purse.gif"
+    theimage68 = "img/rainbow.gif"
+    theimage69 = "img/sadfrog.gif"
+    theimage70 = "img/scissors.gif"
+    theimage71 = "img/shark.gif"
+    theimage72 = "img/shoppingbag.gif"
+    theimage73 = "img/smiley.gif"
+    theimage74 = "img/snowman.gif"
+    theimage75 = "img/sparkle.gif"
+    theimage76 = "img/sparkle2.gif"
+    theimage77 = "img/sparkle3.gif"
+    theimage78 = "img/stemmedrose.gif"
+    theimage79 = "img/sundae.gif"
+    theimage80 = "img/taco.gif"
+    theimage81 = "img/thumbsdown.gif"
+    theimage82 = "img/trumpet.gif"
+    theimage83 = "img/wand.gif"
+    theimage84 = "img/watermelon.gif"
+    theimage85 = "img/whitehand.gif"
+    theimage86 = "img/witch.gif"
+    theimage87 = "img/xjah.gif"
+    theimage88 = "img/xmas.gif"
+    theimage89 = "img/brokenheart.gif"
+
+
+
+
+
+
+
+
+
+
+    var docLayers = (document.layers) ? true:false;
+    var docId = (document.getElementById) ? true:false;
+    var docAll = (document.all) ? true:false;
+    var docbitK = (docLayers) ? "document.layers['":(docId) ? "document.getElementById('":(docAll) ? "document.all['":"document."
+    var docbitendK = (docLayers) ? "']":(docId) ? "')":(docAll) ? "']":""
+    var stylebitK = (docLayers) ? "":".style"
+    var showbitK = (docLayers) ? "show":"visible"
+    var hidebitK = (docLayers) ? "hide":"hidden"
+    var ns6=document.getElementById&&!document.all
+
+    var posX, posY, lastX, lastY, pawCount, curPaw, trackDelay, trackSpacer, theimage
+    lastX = 0
+    lastY = 0
+
+    function doPaw(e) {
+
+      posX = getMouseXPos(e)
+      posY = getMouseYPos(e)
+      if (posX>(lastX+trackSpacer)||posX<(lastX-trackSpacer)||posY>(lastY+trackSpacer)||posY<(lastY-trackSpacer)) {
+        showPaw(posX,posY)
+        lastX = posX
+        lastY = posY
+      }
+    }
+
+    function getMouseXPos(e) {
+      if (document.layers||ns6) {
+        return parseInt(e.pageX+10)
+      } else {
+        return (parseInt(event.clientX+10) + parseInt(document.body.scrollLeft))
+      }
+    }
+
+    function getMouseYPos(e) {
+      if (document.layers||ns6) {
+        return parseInt(e.pageY)
+      } else {
+        return (parseInt(event.clientY) + parseInt(document.body.scrollTop))
+      }
+    }
+
+    function showPaw(x,y) {
+      var processedx=ns6? Math.min(x,window.innerWidth-75) : docAll? Math.min(x,document.body.clientWidth-55) : x
+      if (curPaw >= pawCount) {curPaw = 0}
+      eval(docbitK + "paw" + curPaw + docbitendK + stylebitK + ".left = " + processedx)
+      eval(docbitK + "paw" + curPaw + docbitendK + stylebitK + ".top = " + y)
+      eval(docbitK + "paw" + curPaw + docbitendK + stylebitK + ".visibility = '" + showbitK + "'")
+      if (eval("typeof(trackDelay" + curPaw + ")")=="number") {
+        eval("clearTimeout(trackDelay" + curPaw + ")")
+      }
+      eval("trackDelay" + curPaw + " = setTimeout('hidePaw(" + curPaw + ")',trackDelay)")
+      curPaw += 1
+    }
+
+    function hidePaw(knum) {
+      eval(docbitK + "paw" + knum + docbitendK + stylebitK + ".visibility = '" + hidebitK + "'")
+    }
+
+    function trackbegin(){
+
+      if (docLayers) {
+        document.captureEvents(Event.MOUSEMOVE)
+        document.onMouseMove = doPaw
+      } else {
+        document.onmousemove = doPaw
+      }
+    }
+    window.onload=trackbegin
+
+  </script>
+  <!-- PAW TRACKER END /-->
+
+</head>
+
+<body>
+
+<!-- PAW DIVZ START /-->
+<script type="text/JavaScript">
+
+  if (document.all||document.getElementById||document.layers){
+    for (k=0;k<pawCount;k=k+88) {
+      document.write('<div id="paw' + k + '" class="paw"><img src="' + theimage + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+1) + '" class="paw"><img src="' + theimage2 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+2) + '" class="paw"><img src="' + theimage3 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+3) + '" class="paw"><img src="' + theimage4 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+4) + '" class="paw"><img src="' + theimage5 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+5) + '" class="paw"><img src="' + theimage6 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+6) + '" class="paw"><img src="' + theimage7 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+7) + '" class="paw"><img src="' + theimage8 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+8) + '" class="paw"><img src="' + theimage9 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+9) + '" class="paw"><img src="' + theimage10 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+10) + '" class="paw"><img src="' + theimage11 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+11) + '" class="paw"><img src="' + theimage12 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+12) + '" class="paw"><img src="' + theimage13 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+13) + '" class="paw"><img src="' + theimage14 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+14) + '" class="paw"><img src="' + theimage15 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+15) + '" class="paw"><img src="' + theimage16 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+16) + '" class="paw"><img src="' + theimage17 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+17) + '" class="paw"><img src="' + theimage18 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+18) + '" class="paw"><img src="' + theimage19 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+19) + '" class="paw"><img src="' + theimage20 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+20) + '" class="paw"><img src="' + theimage21 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+21) + '" class="paw"><img src="' + theimage22 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+22) + '" class="paw"><img src="' + theimage23 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+23) + '" class="paw"><img src="' + theimage24 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+24) + '" class="paw"><img src="' + theimage25 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+25) + '" class="paw"><img src="' + theimage26 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+26) + '" class="paw"><img src="' + theimage27 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+27) + '" class="paw"><img src="' + theimage28 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+28) + '" class="paw"><img src="' + theimage29 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+29) + '" class="paw"><img src="' + theimage30 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+30) + '" class="paw"><img src="' + theimage31 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+31) + '" class="paw"><img src="' + theimage32 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+32) + '" class="paw"><img src="' + theimage33 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+33) + '" class="paw"><img src="' + theimage34 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+34) + '" class="paw"><img src="' + theimage35 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+35) + '" class="paw"><img src="' + theimage36 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+36) + '" class="paw"><img src="' + theimage37 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+37) + '" class="paw"><img src="' + theimage38 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+38) + '" class="paw"><img src="' + theimage39 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+39) + '" class="paw"><img src="' + theimage40 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+40) + '" class="paw"><img src="' + theimage41 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+41) + '" class="paw"><img src="' + theimage42 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+42) + '" class="paw"><img src="' + theimage43 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+43) + '" class="paw"><img src="' + theimage44 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+44) + '" class="paw"><img src="' + theimage45 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+45) + '" class="paw"><img src="' + theimage46 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+46) + '" class="paw"><img src="' + theimage47 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+47) + '" class="paw"><img src="' + theimage48 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+48) + '" class="paw"><img src="' + theimage49 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+49) + '" class="paw"><img src="' + theimage50 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+50) + '" class="paw"><img src="' + theimage51 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+51) + '" class="paw"><img src="' + theimage52 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+52) + '" class="paw"><img src="' + theimage53 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+53) + '" class="paw"><img src="' + theimage54 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+54) + '" class="paw"><img src="' + theimage55 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+55) + '" class="paw"><img src="' + theimage56 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+56) + '" class="paw"><img src="' + theimage57 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+57) + '" class="paw"><img src="' + theimage58 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+58) + '" class="paw"><img src="' + theimage59 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+59) + '" class="paw"><img src="' + theimage60 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+60) + '" class="paw"><img src="' + theimage61 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+61) + '" class="paw"><img src="' + theimage62 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+62) + '" class="paw"><img src="' + theimage63 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+63) + '" class="paw"><img src="' + theimage64 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+64) + '" class="paw"><img src="' + theimage65 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+65) + '" class="paw"><img src="' + theimage66 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+66) + '" class="paw"><img src="' + theimage67 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+67) + '" class="paw"><img src="' + theimage68 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+68) + '" class="paw"><img src="' + theimage69 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+69) + '" class="paw"><img src="' + theimage70 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+70) + '" class="paw"><img src="' + theimage71 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+71) + '" class="paw"><img src="' + theimage72 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+72) + '" class="paw"><img src="' + theimage73 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+73) + '" class="paw"><img src="' + theimage74 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+74) + '" class="paw"><img src="' + theimage75 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+75) + '" class="paw"><img src="' + theimage76 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+76) + '" class="paw"><img src="' + theimage77 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+77) + '" class="paw"><img src="' + theimage78 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+78) + '" class="paw"><img src="' + theimage79 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+79) + '" class="paw"><img src="' + theimage80 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+80) + '" class="paw"><img src="' + theimage81 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+81) + '" class="paw"><img src="' + theimage82 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+82) + '" class="paw"><img src="' + theimage83 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+83) + '" class="paw"><img src="' + theimage84 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+84) + '" class="paw"><img src="' + theimage85 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+85) + '" class="paw"><img src="' + theimage86 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+86) + '" class="paw"><img src="' + theimage87 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+87) + '" class="paw"><img src="' + theimage88 + '" alt="" border="0"></div>\n')
+      document.write('<div id="paw' + (k+88) + '" class="paw"><img src="' + theimage89 + '" alt="" border="0"></div>\n')
+      // document.write('<div id="paw' + (k+89) + '" class="paw"><img src="' + theimage90 + '" alt="" border="0"></div>\n')
+      // document.write('<div id="paw' + (k+90) + '" class="paw"><img src="' + theimage91 + '" alt="" border="0"></div>\n')
+
+
+
+
+
+
+
+
+    }
+  }
+
+</script>
+<!-- PAW DIVZ END /-->
+
+
+
+</body>
+</html>

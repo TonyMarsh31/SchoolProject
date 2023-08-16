@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>插槽</title>
+    <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+<body>
+
+<div id="sun219">
+    <slot1>{{studentID}}</slot1>
+    <slot2>{{studentName}}</slot2>
+    <slot3>{{className}}</slot3>
+
+</div>
+
+<script>
+
+    //父组件
+    const sun219 = Vue.createApp({
+        data() {
+            return {
+                studentID: 191340219,
+                studentName: "孙涛",
+                className: "计算机科学与技术2班"
+            }
+        }
+    })
+
+
+    //插槽1
+    sun219.component('slot1', {
+        template: `
+    <h1 style="color: #823c3c">插槽1: <slot></slot></h1>
+  `
+    })
+
+    //插槽2
+    sun219.component('slot2', {
+        template: `
+    <h1 style="color: #5fa2db">插槽2: <slot></slot></h1>
+  `
+    })
+
+    //插槽3
+    sun219.component('slot3', {
+        template: `
+    <h1 style="color: #4f7351">插槽3: <slot></slot></h1>
+  `
+    })
+
+    sun219.mount('#sun219')
+
+</script>
+</body>
+</html>

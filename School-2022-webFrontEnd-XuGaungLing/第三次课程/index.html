@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>index19</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="191340219 孙涛 计算机科学与技术2班">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <style>
+
+        /*@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);*/
+        /*@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);*/
+
+        @media (min-width: 768px) {
+        }
+
+        .form-control-dark:focus {
+            border-color: #fff;
+            box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+        }
+
+        .text-small {
+            font-size: 85%;
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        .site-header a {
+            color: #8e8e8e;
+            transition: color .15s ease-in-out;
+        }
+
+        .site-header a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .flex-equal > * {
+            flex: 1;
+        }
+
+        @media (min-width: 768px) {
+            .flex-md-equal > * {
+                flex: 1;
+            }
+        }
+
+        @media (min-width: 768px) {
+        }
+
+        .st0 {
+            fill: #1CA2BB;
+        }
+
+        .st1 {
+            fill: #EAC100;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .container {
+            max-width: 960px;
+        }
+
+        /*
+         * Custom translucent site header
+         */
+
+        .site-header a {
+            color: #8e8e8e;
+            transition: color .15s ease-in-out;
+        }
+
+        .site-header a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /*
+         * Extra utilities
+         */
+
+        .flex-equal > * {
+            flex: 1;
+        }
+
+        @media (min-width: 768px) {
+            .flex-md-equal > * {
+                flex: 1;
+            }
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="clock/clock.css">
+    <link rel="stylesheet" href="calender/calender.css">
+    <link rel="stylesheet" href="dragUpload/dragUpload.css">
+    <link rel="stylesheet" href="faq/faq.css">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+<!--    <script src="editor/tinymce.min.js"></script>-->
+    <script >
+        tinymce.init({
+            selector: 'textarea#default'
+        });
+    </script>
+
+</head>
+<body>
+
+
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg width="128px" height="128px" viewBox="0 0 128 128" style=":new 0 0 128 128;"
+                     xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <g id="_x31_2_3D_Printing"/>
+                    <g id="_x31_1_VR_Gear"/>
+                    <g id="_x31_0_Virtual_reality"/>
+                    <g id="_x39__Augmented_reality"/>
+                    <g id="_x38__Teleport"/>
+                    <g id="_x37__Glassess"/>
+                    <g id="_x36__Folding_phone"/>
+                    <g id="_x35__Drone"/>
+                    <g id="_x34__Retina_scan"/>
+                    <g id="_x33__Smartwatch"/>
+                    <g id="_x32__Bionic_Arm"><g><polyline class="st0" points="84,92 84,104 36,104 36,92   "/><polyline
+                            class="st1" points="76,104 76,116 44,116 44,104   "/><rect class="st1" height="20"
+                                                                                       width="12"
+                                                                                       x="32" y="28"/><rect class="st1"
+                                                                                                            height="28"
+                                                                                                            width="12"
+                                                                                                            x="44"
+                                                                                                            y="20"/><rect
+                            class="st1" height="28" width="12" x="68" y="20"/><rect class="st1" height="36" width="12"
+                                                                                    x="56" y="12"/><rect class="st1"
+                                                                                                         height="16"
+                                                                                                         width="12"
+                                                                                                         x="92"
+                                                                                                         y="36"/><polygon
+                            class="st0" points="88,92 32,92 32,64 80,64 88,72   "/><g><path d="M108,32H88v24h6v6.1l-5.7,4.6L81.7,60H78v-8h6V16H72V8H52v8H40v8H28v28h6v8h-6v36h4v12h8v12h40v-12h8V96h4V73.9l10-8V56     h6V32z M84,73.7V88H36V68h42.3L84,73.7z M54,52h4v8h-4V52z M66,60v-8h4v8H66z M76,24v20h-4V24H76z M64,16v28h-4V16H64z M52,24v20     h-4V24H52z M36,32h4v12h-4V32z M42,52h4v8h-4V52z M72,112H48v-4h24V112z M80,100H40v-4h40V100z M96,40h4v8h-4V40z"/>
+                        <rect height="8" width="8" x="40" y="72"/></g></g></g>
+                    <g id="_x31__Chip"/></svg>
+            </a>
+            <?xml version="1.0" ?>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a class="nav-link px-2 text-secondary" href="#">导航栏测试占位符</a></li>
+                <li><a class="nav-link px-2 text-white" href="http://corndog.io/">超链接:corndog</a></li>
+                <li><a class="nav-link px-2 text-white" href="https://puginarug.com/">Pug In Rug</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="搜索..."
+                       aria-label="Search">
+            </form>
+
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">登陆</button>
+                <a type="button" class="btn btn-warning" href="signup.html">注册</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 fw-normal">头标题</h1>
+            <p class="lead fw-normal">略略略</p>
+            <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#myModal">模态框测试</button>
+            <!-- 模态框（Modal） -->
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">标题</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            略略略略略略略
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary">确认</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal -->
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">时钟动画</h2>
+            </div>
+            <div class="clock" aria-label="00:00:00 AM">
+                <div class="clock__block clock__block--delay2" aria-hidden="true" data-time-group>
+                    <div class="clock__digit-group">
+                        <div class="clock__digits" data-time="a">00</div>
+                        <div class="clock__digits" data-time="b">00</div>
+                    </div>
+                </div>
+                <div class="clock__colon"></div>
+                <div class="clock__block clock__block--delay1" aria-hidden="true" data-time-group>
+                    <div class="clock__digit-group">
+                        <div class="clock__digits" data-time="a">00</div>
+                        <div class="clock__digits" data-time="b">00</div>
+                    </div>
+                </div>
+                <div class="clock__colon"></div>
+                <div class="clock__block" aria-hidden="true" data-time-group>
+                    <div class="clock__digit-group">
+                        <div class="clock__digits" data-time="a">00</div>
+                        <div class="clock__digits" data-time="b">00</div>
+                    </div>
+                </div>
+                <div class="clock__block clock__block--delay2 clock__block--small" aria-hidden="true" data-time-group>
+                    <div class="clock__digit-group">
+                        <div class="clock__digits" data-time="a">PM</div>
+                        <div class="clock__digits" data-time="b">AM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">静态日历</h2>
+            </div>
+            <div class="calender">
+                <div class="month">
+                    <h1>June - 2022</h1>
+                    <span class="day">1</span>
+                    <span class="day">2</span>
+                    <span class="day">3</span>
+                    <span class="day">4</span>
+                    <span class="day">5</span>
+                    <span class="day">6</span>
+                    <span class="day">7</span>
+                    <span class="day">8</span>
+                    <span class="day">9</span>
+                    <span class="day">10</span>
+                    <span class="day">11</span>
+                    <span class="day">12</span>
+                    <span class="day">13</span>
+                    <span class="day">14</span>
+                    <span class="day">15</span>
+                    <span class="day">16</span>
+                    <span class="day">17</span>
+                    <span class="day">18</span>
+                    <span class="day">19</span>
+                    <span class="day">20</span>
+                    <span class="day">21</span>
+                    <span class="day">22</span>
+                    <span class="day">23</span>
+                    <span class="day current">24</span>
+                    <span class="day">25</span>
+                    <span class="day">26</span>
+                    <span class="day">27</span>
+                    <span class="day">28</span>
+                    <span class="day">29</span>
+                    <span class="day">30</span>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">文件上传</h2>
+                <form id="upload" action="upload.php" method="POST" enctype="multipart/form-data">
+
+                    <fieldset>
+                        <input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="500000"/>
+                        <div>
+                            <label for="fileselect">选择文件</label>
+                            <input type="file" id="fileselect" name="fileselect[]" multiple="multiple"/>
+                            <div id="filedrag">或者把文件拖到这</div>
+                        </div>
+                        <div id="submitbutton">
+                            <button type="submit">Upload Files</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div id="messages">
+                    <p>目前所累计的文件信息</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-}md-5 px-md-5 text-center  overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">FAQ</h2>
+            </div>
+            <div class='faq'>
+                <input id='faq-a' type='checkbox'>
+                <label for='faq-a'>
+                    <p class="faq-heading">How do I purchase Brainitz?</p>
+                    <div class='faq-arrow'></div>
+                    <p class="faq-text">You can purchase an individual account or a site license by emailing us at
+                        welcome@brainitz.com One of our staff will be in touch shortly to set-up your account. We accept
+                        credit card, purchase order, or check. Learn more on our pricing page.<br><br>We also offer
+                        professional development trainings that include the opportunity to pursue credit while also
+                        receiving a discounted license. If you have more questions, please feel free to submit a
+                        request!</p>
+                </label>
+                <input id='faq-b' type='checkbox'>
+                <label for='faq-b'>
+                    <p class="faq-heading">Do you have professional development trainings available?</p>
+                    <div class='faq-arrow'></div>
+                    <p class="faq-text">Yes, we have professional development trainings available almost every month.
+                        Teachers can take our online course that will train you on the theory and practice of putting
+                        lessons online, often called flipped or blended learning. These trainings also include in depth
+                        instruction on how to use Brainitz.<br><br>Online training start at $45, include a 1 year
+                        subscription Brainitz, and come with 1 hour of advancement credit available through Adams State
+                        University or $55. For dates on upcoming trainings, email us at welcome@brainitz.com. If you
+                        have more questions, please feel free to submit a request!</p>
+                </label>
+                <input id='faq-c' type='checkbox'>
+                <label for='faq-c'>
+                    <p class="faq-heading">Does Brainitz accept purchase orders?</p>
+                    <div class='faq-arrow'></div>
+                    <p class="faq-text">Yes, Brainitz accepts purchase order for site licenses. Please set the PO,
+                        including a description of the order to welcome@brainitz.com and we will invoice you for the
+                        amount. Once we send the invoice, someone will be in touch to set up your Brainitz
+                        account.<br><br>You can learn more about our licensing structure on our pricing page. If you
+                        have more questions, please feel free to submit a request!</p>
+                </label>
+                <input id='faq-d' type='checkbox'>
+                <label for='faq-d'>
+                    <p class="faq-heading">What are the technical requirements for Brainitz?</p>
+                    <div class='faq-arrow'></div>
+                    <p class="faq-text">To get setup with Brainitz, instructors will need a computer with working
+                        Internet connection and a web browser. <br><br>Students will need any device with a web browser,
+                        ranging from smartphones to tablets and personal computer, as well as an Internet or cellular
+                        connection. <br><br>For the be st experience, we recommend using the latest version of Google
+                        Chrome, but it should work on a recent version of any major browser. If you have any more
+                        questions, please feel free to submit a request! </p>
+                </label>
+                <input id='faq-e' type='checkbox'>
+                <label for='faq-e'>
+                    <p class="faq-heading">Can I add a PowerPoint to Brainitz</p>
+                    <div class='faq-arrow'></div>
+                    <p class="faq-text">Yes, you can add a PowerPoint to Brainitz. The easiest way is to record your
+                        PowerPoint presentation using a screen capture program like www.screencast-o-matic.com You can
+                        view our tutorial on how to do this here. <br><br>This will allow you to record your PowerPoint
+                        as a video with your voice describing the slides. You will then be able to upload the video on
+                        Brainitz and create an interactive video lesson. If you have any more questions, please feel
+                        free to submit a request!</p>
+                </label>
+                <input id='settings' type='checkbox'>
+                <input id='faq-f' type='checkbox'>
+                <label for='faq-f'>
+                    <p class="faq-heading">Did my student really get logged out and lose their progress?</p>
+                    <div class='faq-arrow'></div>
+                    <p class="faq-text">If a student does not answer a question in 5 minutes after it pops up the
+                        student will be ‘timed out’ and they will lose their progress from the last previously answered
+                        question <br><br>This feature is built in to discourage students from playing a video lesson and
+                        walking away. Students must stay engaged with the video lesson to avoid being timed out. If you
+                        have more questions, please feel free to submit a request!</p>
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">编辑器</h2>
+            </div>
+            <textarea id="default">Hello, World!</textarea>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">小标题</h2>
+                <p class="lead">略略略略略</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">小标题</h2>
+                <p class="lead">略略略略略</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">小标题</h2>
+                <p class="lead">略略略略略</p>
+            </div>
+            <div class="bg-body shadow-sm mx-auto"
+                 style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+    </div>
+</main>
+
+<footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <small class="d-block mb-3 text-muted">&copy; 191340219 孙涛 </small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>下标解释超链接</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="#">略略略略略</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+<script src="clock/clock.js"></script>
+<script src="dragUpload/dragUpload.js"></script>
+
+</html>

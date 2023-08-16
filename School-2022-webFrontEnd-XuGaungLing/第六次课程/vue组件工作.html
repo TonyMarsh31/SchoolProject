@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>vue组件工作</title>
+  <script src="http://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+
+
+<div id="app">
+  <sun219></sun219>
+  <sun19></sun19>
+</div>
+
+
+<script>
+  //全局组件
+  Vue.component("sun219", {
+    template: `<div><h1 style="color: blue" >{{Name}}</h1></div>`,
+    data() {
+      return {
+        Name: "孙涛",
+      };
+    }
+  });
+
+  let vm = new Vue({
+    el: '#app',
+    data: {},
+    // 局部组件
+    components: {
+      "sun19": {
+        template: '<h1 style="color: blue">{{msg}}</h1>',
+        data() {
+          return {
+            msg: '191340219'
+          }
+        }
+      }
+    }
+  })
+
+</script>
+</body>
+</html>

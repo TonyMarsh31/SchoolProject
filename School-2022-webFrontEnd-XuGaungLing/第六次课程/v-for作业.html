@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-for作业</title>
+    <script src="http://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+
+<div id="Sun19">
+    <p style="font-size: 30px ">v-for 带过滤地遍历</p>
+    <ul>
+        <li v-for="data in CourseOfMaxWithDurationMoreThan25">
+            {{data}}
+        </li>
+    </ul>
+    <p style="font-size: 30px ">自定义指令</p>
+    <div v-for="data in json">
+        <p v-change-style=data.Course19> {{data}} </p>
+    </div>
+
+    <p style="font-size: 30px ">使用Vue建立form，可以让用户输入Course19，CourseName和Duration， instructor 使用select从已经有的instructor选择。
+    </p>
+    <table>
+        <tr>
+            <td>Course19</td>
+            <td>CourseName</td>
+            <td>instructor</td>
+            <td>Duration</td>
+        </tr>
+        <tr v-for="(item,index) in json" :key="index">
+            <td>{{item.Course19}}</td>
+            <td>{{item.CourseName}}</td>
+            <td>{{item.instructor}}</td>
+            <td>{{item.Duration}}</td>
+        </tr>
+    </table>
+
+    <div>
+        添加：<br>
+        <label>
+            Course19
+            <input type="text" v-model="json.Course19">
+        </label><br>
+        <label>
+            CourseName
+            <input type="text" v-model="json.CourseName">
+        </label><br>
+        <label>
+            instructor
+            <input type="text" v-model="json.instructor">
+        </label><br>
+        <label>
+            Duration
+            <select v-model=json.instructor>
+                <option v-for="data in json" v-bind:value = "data.instructor" v-text="data.instructor" ></option>
+            </select>
+        </label>
+        <input @click="addItem" type="button" value="添加">
+    </div>
+</div>
+
+<script>
+    Vue.directive('change-style', {
+        bind: function (el, binding) {
+            switch (binding.value) {
+                case '100A':
+                    el.style.color = 'red';
+                    el.style.fontSize = '30px';
+                    break;
+                case '100B':
+                    el.style.color = 'blue';
+                    el.style.fontSize = '40px';
+                    break;
+                case '100C':
+                    el.style.color = 'green';
+                    el.style.fontSize = '50px';
+                    break;
+            }
+        }
+    });
+
+    var app = new Vue({
+            el: "#Sun19",
+            data: {
+                json: [
+                    {
+                        Course19: '100A',
+                        CourseName: 'Reactjs',
+                        instructor: 'Stephen',
+                        Duration: 20
+                    },
+                    {
+                        Course19: '100B',
+                        CourseName: 'Vue js',
+                        instructor: 'Max',
+                        Duration: 30
+                    },
+                    {
+                        Course19: '100C',
+                        CourseName: 'Angularjs',
+                        instructor: 'Max',
+                        Duration: 20
+                    }
+                ]
+            },
+            computed: {
+                CourseOfMaxWithDurationMoreThan25: function () {
+                    return this.json.filter(function (item) {
+                        return item.instructor === 'Max' && item.Duration > 25;
+                    })
+                }
+            },
+            addItem() {
+                this.list.unshift({
+                    name: this.name,
+                    date: new Date()
+                })
+                this.name = ''
+            },
+        }
+    );
+</script>
+</body>
+</html>
